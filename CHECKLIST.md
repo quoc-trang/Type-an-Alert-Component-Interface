@@ -1,0 +1,2 @@
+- You have typed the injected data in `vTabs.vue`
+- The TS errors in `vTabPanel.vue` are gone
