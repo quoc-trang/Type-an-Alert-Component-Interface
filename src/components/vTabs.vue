@@ -23,7 +23,11 @@ provide(injectionKey, {
 import type { InjectionKey, Ref } from "vue";
 
 // type the injection key here 👇
-export const injectionKey = Symbol("vTabs");
+export const injectionKey = Symbol("vTabs") as InjectionKey<{
+  registerTab: (title: string) => void;
+  activateTab: (title: string) => void;
+  activeTab: Ref<string | undefined>;
+}>;
 </script>
 <template>
   <div class="tabs">
